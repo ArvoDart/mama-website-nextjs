@@ -111,7 +111,7 @@ const FunFact = () => {
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
                 25+ Years
               </h3>
-              <p className="text-lg lg:text-para2">Years driving advancement in global food manufacturing.</p>
+              <p className="text-lg lg:text-para2">Driving advancement in global food manufacturing.</p>
             </motion.div>
             <motion.div
               variants={{

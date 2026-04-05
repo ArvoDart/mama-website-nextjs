@@ -34,7 +34,7 @@ export default function Home() {
       {/* <CTA /> */}
       {/* <FAQ /> */}
       {/* <Testimonial /> */}
-      <Pricing />
+      {/* <Pricing /> */}
       <Suspense fallback={<div>Loading...</div>}>
         <Contact />
       </Suspense>

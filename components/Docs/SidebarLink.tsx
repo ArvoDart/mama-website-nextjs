@@ -9,9 +9,9 @@ const SidebarLink = () => {
           href={`/docs`}
           className={`flex w-full rounded-xs bg-stroke px-3 py-2 text-base text-black dark:bg-blackho dark:text-white`}
         >
-          Introduction
+          Curriculum Vitae
         </Link>
-        <Link
+        {/* <Link
           href={`/docs`}
           className={`flex w-full rounded-xs px-3 py-2 text-base text-black dark:text-white `}
         >
@@ -28,7 +28,7 @@ const SidebarLink = () => {
           className={`flex w-full rounded-xs px-3 py-2 text-base text-black dark:text-white `}
         >
           Using Tailwind Components
-        </Link>
+        </Link> */}
       </li>
     </>
   );
