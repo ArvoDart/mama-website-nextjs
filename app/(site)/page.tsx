@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Suspense } from "react";
 import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import Feature from "@/components/Features";
@@ -34,7 +35,9 @@ export default function Home() {
       {/* <FAQ /> */}
       {/* <Testimonial /> */}
       <Pricing />
-      <Contact />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Contact />
+      </Suspense>
       {/* <Blog /> */}
     </main>
   );
