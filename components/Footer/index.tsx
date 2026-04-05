@@ -32,14 +32,14 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/ACSI_Official_Logo.svg"
+                    src="/images/logo/ACSI_Official_logo.svg"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/ACSI_Official_Logo.svg"
+                    src="/images/logo/ACSI_Official_logo.svg"
                     alt="Logo"
                     className="hidden dark:block"
                   />
