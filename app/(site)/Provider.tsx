@@ -18,7 +18,7 @@ export default function ClientLayout({
             attribute="class"
             defaultTheme="light"
         >
-            <Lines />
+            {/* <Lines /> */}
             <Header />
             <ToasterContext />
             {children}
