@@ -8,7 +8,7 @@ const FunFact = () => {
     <>
       {/* <!-- ===== Funfact Start ===== --> */}
       <section className="px-4 py-20 md:px-8 lg:py-22.5 2xl:px-0">
-        <div className="relative z-1 mx-auto max-w-c-1390 rounded-lg bg-linear-to-t from-[#F8F9FF] to-[#DEE7FF] py-22.5 dark:bg-blacksection dark:bg-linear-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark xl:py-27.5">
+        <div className="relative z-1 mx-auto max-w-c-1390 rounded-lg bg-linear-to-t from-transparent to-secondarylight py-22.5 dark:bg-blacksection dark:bg-linear-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark xl:py-27.5">
           <Image
             width={280}
             height={345}
@@ -56,13 +56,19 @@ const FunFact = () => {
             className="animate_top mx-auto mb-12.5 px-4 text-center md:w-4/5 md:px-0 lg:mb-17.5 lg:w-2/3 xl:w-1/2"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-              Expertise You Can Measure
+              About Adriana Quintanar Guzmán, PhD
             </h2>
-            <p className="mx-auto lg:w-11/12">
-              In the highly competitive food manufacturing industry, scaling a product from the test kitchen to the factory floor requires more than just a great recipe—it demands scientific rigor.
+            <p className="mx-auto lg:w-11/12 text-black">
+              Adriana Quintanar Guzmán is a Food Scientist and Technology Innovation expert with over 20 years of experience in the global food industry and 18 years in academic research.
             </p>
-            <p className="mx-auto mt-4 lg:w-11/12">
-              As a Ph.D. Food Scientist and certified Six Sigma Project Leader, I bridge the gap between academic research and industrial reality. From pioneering a patented instant masa process that eliminates wastewater, to acting as an expert witness in intellectual property litigation, I help companies across the US, Latin America, Europe, and Asia streamline their processes, improve shelf-life, and innovate their product lines.
+            <p className="mx-auto mt-4 lg:w-11/12 text-black">
+              She specializes in snack food processing, nixtamalization, and product development, helping companies improve product quality, optimize manufacturing processes, and reduce inefficiencies.
+            </p>
+            <p className="mx-auto mt-4 lg:w-11/12 text-black">
+              She has worked with leading food companies across the United States, Latin America, Europe, and Asia, and is the inventor of patented nixtamalization technologies that significantly reduce water usage and improve consistency.
+            </p>
+            <p className="mx-auto mt-4 lg:w-11/12 text-black">
+              Adriana also serves as an expert witness in food manufacturing litigation cases, providing technical expertise in process, equipment, and intellectual property analysis.
             </p>
           </motion.div>
 
@@ -88,7 +94,20 @@ const FunFact = () => {
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
                 Inventor & Patent Holder
               </h3>
-              <p className="text-lg lg:text-para2">Sustaining high-yield manufacturing processes.</p>
+              <ul className="mx-auto mt-4 max-w-md space-y-2 text-left text-black">
+                <li className="flex items-start gap-3 ">
+                  <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary"></span>
+                  <span>Instant masa production process</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary"></span>
+                  <span>Nixtamalization innovations</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary"></span>
+                  <span>Process improvements for snack manufacturing</span>
+                </li>
+              </ul>
             </motion.div>
             <motion.div
               variants={{
@@ -109,9 +128,22 @@ const FunFact = () => {
               className="animate_top text-center"
             >
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                25+ Years
+                A Lifetime of Food Science Innovation
               </h3>
-              <p className="text-lg lg:text-para2">Driving advancement in global food manufacturing.</p>
+              <ul className="mx-auto mt-4 max-w-md space-y-2 text-left text-black">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary"></span>
+                  <span>25+ Years of industry experience</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary"></span>
+                  <span>PhD, Food Science</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary"></span>
+                  <span>Process improvements for snack manufacturing</span>
+                </li>
+              </ul>
             </motion.div>
             <motion.div
               variants={{

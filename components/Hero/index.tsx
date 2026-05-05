@@ -16,70 +16,68 @@ const Hero = () => {
 
   return (
     <>
-      <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
-        <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
-          <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-            <div className=" md:w-1/2">
-              <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                Transforming Food Manufacturing Through Science, Innovation, and Six Sigma Precision.
-              </h4>
-              <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
-                Dr. Adriana Quintanar Guzmán Global Food Industry Consultant
-              </h1>
-              <p>
-                Dr. Adriana Quintanar Guzmán provides global food industry consulting, specializing in snack food optimization, process engineering, and crisis resolution. 
-                With over 20 years of experience and groundbreaking patents, she turns complex manufacturing challenges into profitable solutions.
-              </p>
+      <section className="relative overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
+        {/* Background Image Container */}
+        <div className="absolute inset-0 z-0">
+          <div className="relative h-full w-full">
+            <Image
+              className="object-cover dark:hidden"
+              src="/images/hero/milpa.jpg"
+              alt="Hero Background"
+              fill
+              priority
+            />
+            <Image
+              className="hidden object-cover dark:block"
+              src="/images/hero/milpa.jpg"
+              alt="Hero Background"
+              fill
+              priority
+            />
+            {/* Overlay to darken image for better text readability */}
+            <div className="absolute inset-0 bg-black/30 dark:bg-black/50"></div>
+          </div>
+        </div>
 
-              <div className="mt-10">
-                <form onSubmit={handleSubmit}>
-                  <div className="flex flex-wrap gap-5">
-                    <input
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      type="text"
-                      placeholder="Enter your email address"
-                      className="rounded-full border border-stroke px-6 py-2.5 shadow-solid-2 focus:border-primary focus:outline-hidden dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
-                    />
-                    <button
-                      aria-label="get started button"
-                      type="submit"
-                      className="flex rounded-full bg-primary px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-secondary dark:bg-btndark dark:hover:bg-blackho"
-                    >
-                      Contact Me Today
-                    </button>
-                  </div>
-                </form>
-
-                <p className="mt-5 text-black dark:text-white">
-                  Schedule a consultation to discover how Dr. Adriana Quintanar Guzmán can revolutionize your food manufacturing processes with her expertise in science, innovation, and Six Sigma precision.
+        {/* Content Container */}
+        <div className="relative z-10 mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+          <div className="flex min-h-[600px] items-center justify-center py-10 md:min-h-[700px] md:py-20">
+            {/* Text Content Card */}
+            <div className="w-full max-w-4xl">
+              <div className="rounded-3xl bg-gradient-to-br from-primary/80 via-logogreen/30 to-secondary/50 p-10 shadow-2xl backdrop-blur-lg dark:bg-gradient-to-br dark:from-primary/40 dark:via-black/95 dark:to-secondary/30 md:p-14 lg:p-20">
+                <h4 className="mb-4.5 text-center text-lg font-bold text-black dark:text-white md:text-xl">
+                  Fix your snack production problems and optimize your processes with proven food science expertise.
+                </h4>
+                <h1 className="mb-5 text-center text-3xl font-medium text-black dark:text-white md:text-4xl xl:text-hero">
+                  PhD Food Scientist with 20+ years of experience, patented nixtamalization technology, and a global track record helping food companies improve quality, reduce costs, and scale production.
+                </h1>
+                <p className="text-center text-lg font-semibold text-black dark:text-white">
+                  Book a Consultation
                 </p>
-              </div>
-            </div>
 
-            <div className="animate_right hidden md:w-1/2 lg:block">
-              <div className="relative 2xl:-mr-7.5">
-                {/* Decorative background elements */}
-                <div className="absolute -right-8 -top-8 -z-10 h-64 w-64 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 blur-3xl"></div>
-                <div className="absolute -bottom-8 -left-8 -z-10 h-64 w-64 rounded-full bg-gradient-to-tr from-secondary/20 to-primary/20 blur-3xl"></div>
-                
-                <div className="relative aspect-700/444 w-full rounded-2xl border-4 border-gradient-to-r from-primary to-secondary p-2 bg-gradient-to-br from-primary via-white to-secondary shadow-2xl">
-                  <div className="relative h-full w-full overflow-hidden rounded-xl bg-white dark:bg-black">
-                    <Image
-                      className="shadow-solid-l dark:hidden"
-                      src="/images/hero/milpa.jpg"
-                      alt="Hero"
-                      fill
-                    />
-                    <Image
-                      className="hidden shadow-solid-l dark:block"
-                      src="/images/hero/milpa.jpg"
-                      alt="Hero"
-                      fill
-                    />
-                    {/* Overlay gradient for depth */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-secondary/10 pointer-events-none"></div>
-                  </div>
+                <div className="mt-10">
+                  <form onSubmit={handleSubmit}>
+                    <div className="flex flex-col items-center gap-5 sm:flex-row sm:justify-center">
+                      <input
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        type="text"
+                        placeholder="Enter your email address"
+                        className="w-full rounded-full border border-stroke bg-white px-6 py-2.5 shadow-solid-2 focus:border-primary focus:outline-hidden dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary sm:w-auto"
+                      />
+                      <button
+                        aria-label="get started button"
+                        type="submit"
+                        className="w-full rounded-full bg-primary px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-secondary dark:bg-btndark dark:hover:bg-blackho sm:w-auto"
+                      >
+                        Contact Me Today
+                      </button>
+                    </div>
+                  </form>
+
+                  <p className="mt-5 text-center text-black dark:text-white">
+                    Explore Solutions
+                  </p>
                 </div>
               </div>
             </div>
