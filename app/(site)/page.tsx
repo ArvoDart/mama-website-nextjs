@@ -28,6 +28,9 @@ export default function Home() {
       <Brands />
       <Feature />
       <FunFact />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Contact />
+      </Suspense>
       {/* <About /> */}
       {/* <FeaturesTab /> */}
       {/* <Integration /> */}
@@ -35,9 +38,6 @@ export default function Home() {
       {/* <FAQ /> */}
       {/* <Testimonial /> */}
       {/* <Pricing /> */}
-      <Suspense fallback={<div>Loading...</div>}>
-        <Contact />
-      </Suspense>
       {/* <Blog /> */}
     </main>
   );
